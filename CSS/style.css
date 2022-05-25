@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #f1f1f1;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    font-family: 'Orbitron', sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+.header{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.479);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+.nombre{
+    font-size: 30px;
+    color: #fff;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.enlaces{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    margin: 0 40px;
+    text-align: center;
+}
+
+.enlaces:hover{
+    color: #9f39ff;
+}
+
+.portada{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mensaje{
+    color: #fff;
+    font-size: 80px;
+    text-align: center;
+}
+
+section{
+    background-color: #fff;
+    padding: 30px;
+    width: 1000px;
+    margin: auto;
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: 4em;
+    color: #9f39ff;
+}
+
+.contenedor_info{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.perfil{
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+}
+
+.descripcion_info{
+    font-size: 20px;
+    text-align: justify;
+    padding: 0 30px;
+}
+
+.contenedor_precios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.plan{
+    width: 350px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: 10px 10px 60px -9px rgba(0,0,0,0.60);
+    border-radius: 30px;
+    text-align: justify;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.nombre_plan{
+    background-color: #9f39ff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.caracteristicas{
+    margin: 20px 20px 20px 30px;
+}
+
+.precio{
+    border-radius: 30px;
+    border: 2px solid #000;
+    background-color: #fff;
+    text-decoration:  none;
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 20px;
+    transition: all 0.6s;
+}
+
+.precio:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.plan.especial{
+    background-color: #9f39ff;
+    width: 400px;
+    height: 550px;
+    box-shadow: 10px 10px 60px -9px rgba(0,0,0,0.60);
+    border-radius: 30px;
+    text-align: justify;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.plan:hover{
+    box-shadow: 10px 10px 60px -9px rgba(0,0,0,20);
+}
+
+.plan.especial .nombre_plan{
+    background-color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #9f39ff;
+    border-radius: 30px;
+}
+
+.plan.especial .caracteristicas{
+    color: #fff;
+}
+
+footer{
+    background-color: #000;
+    padding: 30px;
+}
+
+footer .subtitulo{
+    color: #fff;
+}
+
+.info_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.redes_sociales{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.red_social{
+    text-decoration: none;
+    color: #fff;
+    font-size: 60px;
+    transition: all 0.6s;
+}
+
+.red_social:hover{
+    color: #9f39ff;
+}
+
+.descripcion_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.descripcion_footer img{
+    width: 400px;
+    height: 400px;
+}
+
+.descripcion_footer h4{
+    color: #fff;
+    font-size: 24px;
+}
+
+.descripcion_footer p{
+    color: #fff;
+}
+
+.info{
+    margin: 30px 0;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.c{
+    font-size: 1px;
+}
+
+.copy{
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media (max-width: 1000px){
+    section{
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px){
+    .header{
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    
+    .abajo{
+        padding: 0 20px;
+        flex-wrap: wrap;
+    }
+    
+    .enlaces{
+        font-size: 25px;
+        margin: 0 30px;
+    }
+
+    .mensaje{
+        font-size: 50px;
+    }
+    
+    section{
+        padding: 20px;
+    }
+    
+    .subtitulo{
+        font-size: 3em;
+    }
+    
+    .contenedor_info{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .descripcion_info{
+        padding: 0 20px;
+    }
+
+    .contenedor_precios{
+        margin: 20px 0;
+    }
+
+    .red_social{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 700px){
+    .header,
+    .abajo{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "logo nombre"
+        "menu menu"
+        ;
+        height: 150px;
+    }
+
+    .logo{
+        grid-area: logo;
+    }
+
+    .nombre{
+        grid-area: nombre;
+        font-size: 20px;
+    }
+
+    .menu{
+        grid-area: menu;
+    }
+}
+
+@media (max-width: 450px){
+    .mensaje{
+        font-size: 30px;
+    }
+
+    .portada{
+        height: 500px;
+    }
+    .plan{
+        width: 350px;
+        height: 450px;
+        padding: 10px;
+    }
+    
+    .nombre_plan{
+        font-size: 20px;
+    }
+    
+    .caracteristicas{
+        margin: 20px;
+    }
+    
+    .precio{
+        font-size: 20px;
+    }
+    .plan.especial{
+        width: 350px;
+        height: 550px;
+        padding: 10px;
+    }
+
+    .plan.especial .nombre_plan{
+        font-size: 20px;
+    }
+    
+    .plan.especial .caracteristicas{
+        color: #fff;
+    }
+    
+    .perfil{
+        width: 200px;
+        height: 200px;
+    }
+
+    .descripcion_footer img{
+        width: 200px;
+        height: 200px;
+    }
+}

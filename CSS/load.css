@@ -1,0 +1,26 @@
+.hidden{
+    overflow: hidden;
+}
+
+.load{
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flipping {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-image: #9f39ff;
+    transform: perspective(168px) rotateX(0);
+    animation: flippping-qayox5md 0.75s infinite;
+ }
+ 
+ @keyframes flippping-qayox5md {
+    100% {
+       transform: perspective(168px) rotateX(180deg);
+    }
+ }
