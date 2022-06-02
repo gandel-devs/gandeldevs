@@ -135,3 +135,83 @@ section{
 .diseno.dos{
     background-image: url(../img/estilo_dos.PNG);
 }
+
+@media (max-width: 900px){
+    .header{
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+
+    .abajo{
+        padding: 0 20px;
+        flex-wrap: wrap;
+    }
+
+    .enlaces{
+        font-size: 25px;
+        margin: 0 30px;
+    }
+
+    .mensaje{
+        font-size: 50px;
+    }
+
+    section{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 700px){
+    .header,
+    .abajo{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "logo nombre"
+        "menu menu"
+    ;
+        height: 150px;
+    }
+
+    .logo{
+        grid-area: logo;
+    }
+
+    .nombre{
+        grid-area: nombre;
+        font-size: 20px;
+    }
+
+    .menu{
+        grid-area: menu;
+    }
+}
+
+@media (max-width: 450px){
+
+    .header,
+    .abajo{
+        height: 100px;
+    }
+
+    .nombre{
+        font-size: 16px;
+    }
+
+    .enlaces{
+        font-size: 16px;
+    }
+
+    .portada{
+        height: 500px;
+    }
+
+    .diseno{
+        border-radius: 30px;
+        width: 200px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
