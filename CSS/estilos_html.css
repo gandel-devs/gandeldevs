@@ -136,6 +136,10 @@ section{
     background-image: url(../img/estilo_dos.PNG);
 }
 
+.diseno.tres{
+    background-image: url(../img/estilo_tres.PNG);
+}
+
 @media (max-width: 900px){
     .header{
         flex-wrap: wrap;
