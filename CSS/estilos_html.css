@@ -144,6 +144,11 @@ section{
     background-image: url(../img/estilo_cuatro.PNG);
 }
 
+.diseno.cinco{
+    background-image: url(../img/estilo_cinco.PNG);
+}
+
+
 @media (max-width: 900px){
     .header{
         flex-wrap: wrap;
