@@ -148,6 +148,10 @@ section{
     background-image: url(../img/estilo_cinco.PNG);
 }
 
+.diseno.seis{
+    background-image: url(../img/estilo_seis.PNG);
+}
+
 
 @media (max-width: 900px){
     .header{
