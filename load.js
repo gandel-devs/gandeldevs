@@ -1,4 +1,5 @@
 window.onload = function() {
-    $('.load').fadeOut();
-    $('body').removeClass('hidden');
+    var container = document.getElementById('containerLoad');
+    container.style.visibility = 'hidden';
+    container.style.opacity = '0';
 }
