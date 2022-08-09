@@ -1,26 +1,54 @@
-.hidden{
-    overflow: hidden;
-}
-
-.load{
+#containerLoad{
+    background-color: #fff;
+    width: 100%;
     height: 100vh;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: fixed;
+    transition: all 0.5s ease;
+    z-index: 10000;
+
+    overflow-y: hidden;
 }
 
-.flipping {
-    display: block;
-    width: 45px;
-    height: 45px;
-    background-image: #9f39ff;
-    transform: perspective(168px) rotateX(0);
-    animation: flippping-qayox5md 0.75s infinite;
- }
- 
- @keyframes flippping-qayox5md {
-    100% {
-       transform: perspective(168px) rotateX(180deg);
+#load{
+    border: 40px solid #ccc;
+    border-bottom: 40px solid #9f39ff;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+    animation: loadRotate 3s linear infinite;
+}
+
+@keyframes loadRotate {
+
+    0%{
+        transform: rotate(0deg);
     }
- }
+
+    25%{
+        transform: rotate(90deg);
+        border-left: 40px solid #9f39ff;
+    }
+
+    50%{
+        transform: rotate(180deg);
+        border-left: 40px solid #9f39ff;
+        border-top: 40px solid #9f39ff;
+    }
+
+    75%{
+        transform: rotate(270deg);
+        border-left: 40px solid #9f39ff;
+    }
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}

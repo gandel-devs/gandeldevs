@@ -1,4 +1,5 @@
 window.addEventListener("scroll", function() {
-    var header = document.querySelector("header");
-    header.classList.toggle("abajo", this.window.scrollY>400);
+    var back = document.querySelector(".back");
+    back.classList.toggle("active", this.window.scrollY>800);
+    back.classList.toggle("active", this.window.scrollY >= 800);
 })
