@@ -165,6 +165,9 @@ section{
     background-image: url(../img/estilo_seis.PNG);
 }
 
+.diseno.siete{
+    background-image: url(../img/estilo_siete.png);
+}
 
 @media (max-width: 1200px){
     
