@@ -256,6 +256,9 @@ section {
     font-size: 25px;
     color: #fff;
 }
+.priceShop.m{
+    margin-bottom: 60px;
+}
 
 .styleShop {
     width: 100%;
@@ -287,12 +290,73 @@ footer {
     gap: 40px;
 }
 
-.redes {
-    height: 300px;
+.contactMe{
+    width: 400px;
+    height: 600px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px 0 #8300ff;
+}
+
+.contactMe form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contactMe form input[type="text"],
+.contactMe form input[type="tel"]{
+    background-color: #000;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    border: 2px solid #8300ff;
+    border-top: none;
+    border-left: none;
+    color: #fff;
+}
+
+.contactMe form input:focus,
+.contactMe form select:focus{
+    outline: none;
+}
+
+.contactMe form select{
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    border: 2px solid #8300ff;
+    border-top: none;
+    border-left: none;
+}
+
+.contactMe form input[type="submit"]{
+    background-color: #8300ff;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 40px;
+    border: none;
+}
+
+.redes {
+    background-color: #000;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .rs {
