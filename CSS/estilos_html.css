@@ -169,6 +169,10 @@ section{
     background-image: url(../img/estilo_siete.png);
 }
 
+.diseno.ocho{
+    background-image: url(../img/estilo_ocho.png);
+}
+
 @media (max-width: 1200px){
     
     section{
