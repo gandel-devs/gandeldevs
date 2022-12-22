@@ -85,6 +85,13 @@ main{
 .title{
     color: #fff;
     font-size: 80px;
+    text-align: center;
+}
+
+.infoPack{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
 }
 
 .imgMain{
