@@ -225,6 +225,13 @@ section {
     transition: all 0.5s;
 }
 
+.type.two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .type:hover {
     box-shadow: 2px 2px 0px #000;
 }
