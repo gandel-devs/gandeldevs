@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+::selection{
+    filter: invert(10);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -110,7 +114,6 @@ body::-webkit-scrollbar-thumb {
     background-color: #fff;
     color: #9f39ff;
     position: relative;
-
     animation: go 1s linear infinite;
 }
 
@@ -203,7 +206,7 @@ section {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
@@ -218,18 +221,11 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     box-shadow: 15px 15px 0px #000;
     transition: all 0.5s;
-}
-
-.type.two{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .type:hover {
@@ -268,10 +264,10 @@ section {
 }
 
 .styleShop {
-    width: 100%;
+    width: 80%;
     height: 80px;
-    border-radius: 0 0 40px 40px;
-    background-color: #8300ff;
+    border-radius: 40px;
+    background-color: #000;
     color: #fff;
     text-align: center;
     line-height: 80px;
@@ -281,7 +277,7 @@ section {
 }
 
 .styleShop:hover {
-    color: #000;
+    text-decoration: underline;
 }
 
 footer {
@@ -327,6 +323,7 @@ footer {
     border-top: none;
     border-left: none;
     color: #fff;
+    caret-color: #8300ff;
 }
 
 .contactMe form input:focus,
