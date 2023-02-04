@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: gandeldevs.xyz
+Token: 40ae98b944972ca84091baeb81e0e3e3c2a0f7fa941a360c31ad31b482b9adb6
