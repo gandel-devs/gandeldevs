@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <h1 id="title">Tic Tac <b>Toe</b></h1>
+
+    <div class="points">
+
+        <div class="pointsP1">
+            <p class="pointP1">0</p>
+            <p class="nameP1">PLAYER 1</p>
+        </div>
+        <div class="pointsP2">
+            <p class="pointP2">0</p>
+            <p class="nameP2">PLAYER 2</p>
+        </div>
+
+        <button class="changeName">
+            Change player names
+        </button>
+
+    </div>
+
+    <div class="form">
+        <button id="close">x</button>
+        <h2 id="subtitle">SETTINGS</h2>
+        <form>
+
+            <label for="playerOne" class="p1">Player 1:</label><br>
+            <input type="text" name="playerOne" id="namePOne"><br>
+            <label for="playerTwo" class="p2">Player 2:</label><br>
+            <input type="text" name="playerTwo" id="namePTwo"><br>
+
+            <input type="button" value="CHANGE" id="change">
+
+        </form>
+    </div>
+
+    <div class="container">
+        
+        <div class="ticTacToeContainer">
+
+            <button class="section section-1"></button>
+            <button class="section section-2"></button>
+            <button class="section section-3"></button>
+            <button class="section section-4"></button>
+            <button class="section section-5"></button>
+            <button class="section section-6"></button>
+            <button class="section section-7"></button>
+            <button class="section section-8"></button>
+            <button class="section section-9"></button>
+
+        </div>
+
+    </div>
+
+    <button id="reset">
+        <i class="fa-solid fa-rotate-right"></i>
+    </button>
+
+    <a href="https://gandeldevs.xyz/" id="gandel" target="_blank">GANDEL DEVS</a>
+
+    <p class="version">V 1.0.0</p>
+
+    <script src="js/changeName.js"></script>
+    <script src="js/logicGame.js"></script>
+    <script src="https://kit.fontawesome.com/db234e9712.js" crossorigin="anonymous"></script>
+</body>
+</html>
